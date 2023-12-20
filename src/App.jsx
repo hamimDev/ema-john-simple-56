@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+      <h1>New Commit</h1>
       <Navbar></Navbar>
       <Order></Order>
     </>
