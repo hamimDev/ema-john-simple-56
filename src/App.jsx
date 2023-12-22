@@ -1,16 +1,15 @@
 
 import './App.css'
-import Navbar from './Navbar/Navbar'
-import Order from './Shop/OrderS/Order'
+import ShopAll from './ShopAll'
+
 
 function App() {
   
 
   return (
     <>
+      <ShopAll></ShopAll>
       
-      <Navbar></Navbar>
-      <Order></Order>
     </>
   )
 }

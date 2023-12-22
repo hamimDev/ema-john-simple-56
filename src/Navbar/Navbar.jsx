@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import logo from '../images/Logo.svg';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -21,26 +22,27 @@ const Navbar = () => {
         </div>
         <ul className={`lg:flex ${isMenuOpen ? 'flex' : 'hidden'} mt-4 lg:mt-0 space-x-4`}>
           <li>
-            <a href="#" className="text-white hover:text-red-400 lg:text-xl font-medium">
-              Order
-            </a>
+            <Link to="/" className="text-white hover:text-red-400 lg:text-xl font-medium">
+              Shop
+            </Link>
+            
           </li>
           <li>
-            <a href="#" className="text-white hover:text-red-400 lg:text-xl font-medium">
-              Order Review
-            </a>
+            <Link to="/orders" className="text-white hover:text-red-400 lg:text-xl font-medium">
+              Orders
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-white hover:text-red-400 lg:text-xl font-medium">
+            <Link to="/inventory" className="text-white hover:text-red-400 lg:text-xl font-medium">
               Manage Inventory
-            </a>
+            </Link>
           </li>
           <li className="lg:mr-4">
             {/* Making spacing responsive for login link */}
             <button>
-            <a href="#" className="text-white hover:text-blue-600 lg:text-2xl font-medium">
+            <Link to="/login" className="text-white hover:text-blue-600 lg:text-2xl font-medium">
               Login
-            </a>
+            </Link>
             </button>
           </li>
         </ul>
