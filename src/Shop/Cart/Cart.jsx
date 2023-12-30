@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cart = ({cart}) => {
+const Cart = ({cart, handleClearCart, children}) => {
     
     
 
@@ -23,7 +23,7 @@ const Cart = ({cart}) => {
 
 
     return (
-        <div className='text-[#2A414F]'>
+        <div className='text-[#2A414F] '>
             <h1 className='text-center text-2xl font-bold my-5'>Order Summary</h1>
             <div className='pl-5 mt-[50px]'>
             <h4>Selected Items: {quantity}</h4>
@@ -33,10 +33,11 @@ const Cart = ({cart}) => {
             </div>
             <h1 className=' text-[21px] font-bold my-5 pl-5'>Grand Total: ${grantTotal}</h1>
             <div className='text-center mt-[71px] bg-[#FF3030] m-5 rounded-md'>
-                <button className='h-[48px] w-[230px] text-white'>Clear Cart</button>
+                <button onClick={handleClearCart} className='h-[48px] w-[230px] text-white'>Clear Cart</button>
             </div>
             <div className='text-center mt-[13px] bg-[#F90] m-5 rounded-md'>
-                <button className='h-[48px] w-[230px] text-white'>Review Order</button>
+               {children}
+                
             </div>
         </div>
     );

@@ -7,7 +7,7 @@ const Product = (props) => {
     const handleAddToCart = props.handleAddToCart;
     
     return (
-        <div className='m-[50px] w-[300px] h-[600px] border-solid border-2 border-sky-500 rounded-md relative' >
+        <div className='m-[50px] w-[300px] h-[600px] border-solid border-2 border-sky-500 rounded-md relative mb-24'>
             <img className='w-[286px] h-[286px] m-[7px] rounded-md' src={img} alt="" />
             <div className='ml-[14px] mt-[10px]'>
             <div>

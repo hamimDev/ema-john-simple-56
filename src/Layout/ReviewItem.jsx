@@ -4,10 +4,10 @@ import React from "react";
 const ReviewItem = ({ product, handleRemoveFromCart }) => {
   const { id, img, price, name, quantity } = product;
   return (
-    <div className="w-[110%]  lg:w-[571px]  border-2 border-solid border-#95A0A7 p-2 rounded-md mt-5 bg-slate-300 flex items-center">
+    <div className="  lg:w-[571px]  border-2 border-solid border-#95A0A7 p-2 rounded-md mt-5 bg-slate-300 flex items-center">
       <img className="w-[91px] rounded-md" src={img} alt="" />
 
-      <div className="w-[110%]  lg:w-[571px] lg:h-[107px] flex justify-between items-center">
+      <div className=" lg:w-[571px] lg:h-[107px] flex justify-between items-center">
         <div className="ml-4 mb-2">
             <p className="text-2xl font-semibold">{name}</p>
             <p className="text-xl font-medium text-gray-700">Price: <span className="text-orange-500">${price}</span></p>
